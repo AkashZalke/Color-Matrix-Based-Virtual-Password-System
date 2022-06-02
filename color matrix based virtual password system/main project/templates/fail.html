@@ -1,0 +1,20 @@
+
+{%extends 'base.html' %}
+
+{%block head%}
+<title>Failed Login</title>
+<link rel="stylesheet" href ="{{ url_for('static',filename='style_fail.css') }}"> 
+{% endblock %}
+
+
+{%block body%}
+
+    <div class="content1">
+        <img src="https://www.curtainsjs.com/images/intro-background.jpg">
+        <div class="centered1">
+        <h2>SORRY! UNSUCCESSFULL LOGIN </h2>
+        <h4>You failed to successfully log in !</h4>
+        <h4>Virtual password mismatched !</h4>
+        </div>
+    </div>
+    {% endblock %}

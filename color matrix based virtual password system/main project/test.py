@@ -1,0 +1,3 @@
+x="'Anik'"
+
+print(x)

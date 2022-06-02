@@ -1,0 +1,95 @@
+{%extends 'base.html' %}
+
+{%block head%}
+<link rel="stylesheet" href ="{{ url_for('static',filename='main.css') }}"> 
+{% endblock %}
+
+
+{%block body%}
+
+<div class="form">
+   <div class="form__box">
+     <div class="form__left">
+      <div class="ColorMap">
+         <TABLE>
+             <TR>
+                <TD bgcolor={{coloru["A"]}}>A</TD>
+                <TD bgcolor={{coloru["B"]}}>B</TD>
+                <TD bgcolor={{coloru["C"]}}>C</TD>
+                <TD bgcolor={{coloru["D"]}}>D</TD>
+                <TD bgcolor={{coloru["E"]}}>E</TD>
+                <TD bgcolor={{coloru["F"]}}>F</TD>
+             </TR>
+             <TR>
+                 <TD bgcolor={{coloru["G"]}}>G</TD>
+                 <TD bgcolor={{coloru["H"]}}>H</TD>
+                 <TD bgcolor={{coloru["I"]}}>I</TD>
+                 <TD bgcolor={{coloru["J"]}}>J</TD>
+                 <TD bgcolor={{coloru["K"]}}>K</TD>
+                 <TD bgcolor={{coloru["L"]}}>L</TD>
+              </TR>
+              <TR>
+                 <TD bgcolor={{coloru["M"]}}>M</TD>
+                 <TD bgcolor={{coloru["N"]}}>N</TD>
+                 <TD bgcolor={{coloru["O"]}}>O</TD>
+                 <TD bgcolor={{coloru["P"]}}>P</TD>
+                 <TD bgcolor={{coloru["Q"]}}>Q</TD>
+                 <TD bgcolor={{coloru["R"]}}>R</TD>
+              </TR>
+              <TR>
+                 <TD bgcolor={{coloru["S"]}}>S</TD>
+                 <TD bgcolor={{coloru["T"]}}>T</TD>
+                 <TD bgcolor={{coloru["U"]}}>U</TD>
+                 <TD bgcolor={{coloru["V"]}}>V</TD>
+                 <TD bgcolor={{coloru["W"]}}>W</TD>
+                 <TD bgcolor={{coloru["X"]}}>X</TD>
+              </TR>
+              <TR>
+                 <TD bgcolor={{coloru["Y"]}}>Y</TD>
+                 <TD bgcolor={{coloru["Z"]}}>Z</TD>
+                 <TD bgcolor={{coloru["1"]}}>1</TD>
+                 <TD bgcolor={{coloru["2"]}}>2</TD>
+                 <TD bgcolor={{coloru["3"]}}>3</TD>
+                 <TD bgcolor={{coloru["4"]}}>4</TD>
+              </TR>
+              <TR>
+                 <TD bgcolor={{coloru["5"]}}>5</TD>
+                 <TD bgcolor={{coloru["6"]}}>6</TD>
+                 <TD bgcolor={{coloru["7"]}}>7</TD>
+                 <TD bgcolor={{coloru["8"]}}>8</TD>
+                 <TD bgcolor={{coloru["9"]}}>9</TD>
+                 <TD bgcolor={{coloru["0"]}}>0</TD>
+              </TR>   
+          </TABLE>
+         
+          <button style="background-color: #FF0F0F" type="button"> R</button> 
+          <button style="background-color: #008000" type="button"> G </button> 
+          <button style="background-color: #63D5CA" type="button"> B</button> 
+          <button style="background-color: #FFFF00" type="button"> Y </button>
+          <button style="background-color: #A32CC4" type="button"> P </button>
+          <button style="background-color: #FFFFFF" type="button"> W </button>
+          
+          
+         </div>
+     </div>
+     <div class="form__right">
+       <div class="form__padding-right">
+           <form action="/" method="POST">
+           <h1 class="form__title" >Login</h1>
+           <input class="form__userid"  type="text" placeholder="User ID" name="username_login" />
+           <input class="form__password" type="text" placeholder="Virtual Password" name="vpswd_login"/>
+           <input class="form__submit-btn" name="submit_button" type="submit" value="Login"/> 
+           <input class="form__submit-btn" name="submit_button" type="submit" value="Refresh"/>             
+           </form>    
+       
+         
+   
+           
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+
+{% endblock %}
